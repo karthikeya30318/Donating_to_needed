@@ -1,0 +1,324 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f0f8ff; /* Soft light blue background */
+  color: #333; /* Default text color */
+  line-height: 1.6;
+}
+
+/* Main Page Container */
+.main-page-container {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(to right, #4e1d1d, #00bcd4); /* Modern gradient */
+  color: #fff; /* White text for contrast */
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* User Input Section */
+.user-input {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.input-label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff; /* White for better contrast */
+  margin-bottom: 10px;
+}
+
+.user-input-field {
+  padding: 10px;
+  width: 60%;
+  font-size: 1rem;
+  border: 2px solid #0288d1; /* Light blue border */
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-input-field:focus {
+  border-color: #004d80; /* Deep blue on focus */
+  box-shadow: 0 0 5px rgba(0, 77, 128, 0.5); /* Glow effect */
+}
+
+.submit-button, .login-button, .signup-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px; /* Rounded buttons */
+  background-color: #0288d1; /* Blue background */
+  color: #fff; /* White text */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+  margin: 10px 5px; /* Spacing between buttons */
+  width: 150px; /* Consistent width */
+  height: 45px; /* Consistent height */
+  display: inline-block;
+}
+
+.submit-button:hover, .login-button:hover, .signup-button:hover {
+  background-color: #004d80; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+.submit-button:active, .login-button:active, .signup-button:active {
+  transform: scale(0.95); /* Pressed effect */
+}
+
+.greeting-message {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #fff; /* White text for contrast */
+}
+
+/* About Section */
+.about {
+  text-align: center;
+  padding: 40px 20px;
+  position: relative; /* Required for overlay */
+  background-image: url('D:\JAVA_SAMPLE2\mine\public\mission.jpg'); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repeating the image */
+  border-radius: 10px;
+  color: #fff; /* Text color to contrast with the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 40px;
+}
+
+/* Semi-transparent overlay for the About Section */
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  border-radius: 10px; /* Match the parent’s border-radius */
+  z-index: 1;
+}
+
+.about h2, .about p {
+  position: relative; /* Ensure text is above the overlay */
+  z-index: 2;
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: #fefefe; /* Ensure title contrasts with the background */
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.1rem;
+  color: #ececec; /* Softer contrast for descriptive text */
+  max-width: 600px;
+  margin: 0 auto 15px;
+}
+
+/* How It Works Section */
+.how-it-works {
+  padding: 40px 20px;
+  position: relative; /* Enables layering for text over the image */
+  background-image: url('D:/JAVA_SAMPLE2/mine/public/how_it_works.jpg'); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repeating the image */
+  border-radius: 10px; /* Rounds the corners of the section */
+  color: #fff; /* White text for better contrast */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  margin-bottom: 40px; /* Space below the section */
+  overflow: hidden; /* Ensures child elements don’t overflow */
+}
+
+/* Semi-transparent overlay for How It Works */
+.how-it-works::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  z-index: 1; /* Ensures the overlay appears below the text */
+}
+
+/* Text and content relative positioning */
+.how-it-works h2, 
+.how-it-works ul {
+  position: relative; /* Makes sure text is above the overlay */
+  z-index: 2;
+}
+
+/* Enhanced How It Works Heading */
+.how-it-works h2 {
+  font-size: 2.5rem; /* Larger font size for emphasis */
+  font-weight: bold; /* Make it bold for visibility */
+  text-align: center; /* Center align for uniformity */
+  color: #fcffff; /* Vibrant color to stand out */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  margin-bottom: 20px; /* Space below the heading */
+  position: relative; /* For additional effects like underline */
+}
+
+.how-it-works h2::after {
+  content: ''; /* Decorative underline */
+  position: absolute;
+  left: 50%;
+  bottom: -10px; /* Adjust underline position */
+  transform: translateX(-50%);
+  width: 80%; /* Width of the underline */
+  height: 3px; /* Thickness of the underline */
+  background-color: #ffffff; /* Matches the heading color */
+  border-radius: 2px; /* Smooth corners */
+}
+
+/* List Styling */
+.how-it-works ul {
+  list-style: none; /* Removes default list bullets */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Ensures no margin between the list and its parent */
+}
+
+.how-it-works li {
+  font-size: 1rem; /* Standard font size */
+  padding: 10px 0; /* Spacing between list items */
+  line-height: 1.5; /* Better readability */
+  color: #f0f0f0; /* Slightly lighter text color */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Subtle shadow for text */
+}
+
+/* Add Hover Effect for List Items */
+.how-it-works li:hover {
+  color: #fbfcfc; /* Matches the heading color */
+  transition: color 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .how-it-works {
+    padding: 30px 15px; /* Adjust padding for smaller screens */
+  }
+
+  .how-it-works h2 {
+    font-size: 2rem; /* Smaller heading size for better fit */
+  }
+
+  .how-it-works li {
+    font-size: 0.9rem; /* Reduce font size slightly */
+  }
+}
+
+
+/* Categories Section */
+.categories {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #e6f7ff; /* Soft blue tint */
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.categories h2 {
+  font-size: 2rem;
+  color: #004d80;
+  margin-bottom: 20px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+}
+
+.category-card {
+  padding: 20px 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #004d80;
+  font-weight: bold;
+  transition: transform 0.3s, background-color 0.3s;
+  cursor: pointer;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+  background-color: #0288d1;
+  color: #fff;
+}
+
+/* Success Stories Section */
+.success-stories {
+  padding: 40px 20px;
+  text-align: center;
+  background: linear-gradient(to right, #5c6b74, #400606); /* Gradient */
+  color: #fff;
+  border-radius: 10px;
+}
+
+.success-stories h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.success-stories p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.testimonials {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.testimonials blockquote {
+  margin: 10px auto;
+  max-width: 600px;
+  border-left: 4px solid #fff;
+  padding-left: 15px;
+  color: #b3e5fc; /* Light blue for testimonials */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}

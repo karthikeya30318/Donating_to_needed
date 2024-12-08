@@ -1,0 +1,43 @@
+/* Basic Styling for the Navigation Bar */
+.navbar {
+  background-color: #3a0404;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  align-items: center;
+}
+
+.logo a {
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+  transition: transform 0.3s ease; /* Adding transition for smooth effect */
+}
+
+.nav-links a {
+  color: rgb(254, 249, 249);
+  text-decoration: none;
+  font-size: 1em;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block; /* Ensure proper box model for padding */
+}
+
+.nav-links a:hover {
+  
+  color: #fbf8f8;
+}
+
+.nav-links li:hover {
+  transform: translateX(10px); /* Move the button 10px to the right on hover */
+}
