@@ -68,3 +68,45 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+What Users Can Donate:
+
+Food: Non-perishable items (e.g., canned goods, packaged food) and fresh meals for immediate consumption.
+Clothes: New or gently used clothing for all age groups and sizes.
+Shelter Support: Items like blankets, pillows, tents, or temporary accommodation offers.
+Medical Supplies: Basic first aid kits, medicines, or mobility aids (e.g., crutches, wheelchairs).
+Other Essentials: Household items, school supplies, or anything useful for those in need.
+Temporary Display of Perishable Food Items:
+
+Food Validity Timer:
+When a donor uploads food items, the system automatically tags them as perishable.
+These items are marked with an expiration timestamp, allowing them to stay visible on the webpage for one night only.
+Automatic Removal:
+A background script ensures that food listings are automatically removed after the night, ensuring only fresh and valid items are displayed.
+Optionally, send reminders to donors if their food was not picked up.
+Category Boxes with Enhanced Features:
+
+Food Box:
+Displays food items with their expiration time clearly visible.
+Includes a "Pick Now" button to reserve food items before removal.
+Clothes Box:
+Includes options for filtering clothes by type (men, women, children) and condition.
+Medical Box:
+Highlights urgent medical supplies and includes a "Request Urgently" button.
+Shelter Box:
+Displays nearby shelter options with detailed descriptions.
+Automatic Notifications:
+
+Notifications to users when food items are about to expire or have been removed from the platform.
+Updates to donors when their items are picked up or claimed.
+Enhanced Real-Time Updates:
+
+Dynamic refresh of the food listings to indicate the time remaining for perishable items.
+Highlighting newly donated or urgent items to attract attention.
+Administrative Controls:
+
+Admins can monitor the expiration of food items and manually intervene if needed.
+Logs of removed items for record-keeping and transparency.
+
